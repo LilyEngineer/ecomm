@@ -14,6 +14,12 @@ A modern, responsive landing page for a commerce platform built with **HTML**, *
 
 ![Landing Page Screenshot](images/screenshot.png)
 
+🛠 Tech Stack
+HTML5
+Tailwind CSS
+JavaScript
+Splide.js for the image carousel
+
 ## 🚀 Getting Started
 
 1. Clone the repo:
