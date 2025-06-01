@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commerce Platform</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        autoplay: true,
+        gap: '1rem',
+      }).mount();
+    });
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-8 py-4 bg-white shadow">
+    <div class="flex items-center space-x-8">
+      <div class="text-xl font-bold">Logo</div>
+      <a href="#" class="text-gray-700 hover:text-blue-500">Pricing</a>
+      <a href="#" class="text-gray-700 hover:text-blue-500">Support</a>
+      <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+      <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="text-gray-700 hover:text-blue-500">Log in</button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Start for free</button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="w-full">
+    <img src="https://source.unsplash.com/1600x600/?remote,work" alt="Remote work" class="w-full h-96 object-cover">
+  </section>
+
+  <!-- Intro Text -->
+  <section class="text-center py-12 px-4 max-w-4xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-6">A commerce platform with beautiful themes to launch your small business online.</h2>
+  </section>
+
+  <!-- Carousel -->
+  <section class="px-4 py-8 max-w-6xl mx-auto">
+    <div class="splide" aria-label="Online shop images">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="https://source.unsplash.com/400x300/?shop,1" alt="Shop 1" class="rounded shadow"></li>
+          <li class="splide__slide"><img src="https://source.unsplash.com/400x300/?shop,2" alt="Shop 2" class="rounded shadow"></li>
+          <li class="splide__slide"><img src="https://source.unsplash.com/400x300/?shop,3" alt="Shop 3" class="rounded shadow"></li>
+          <li class="splide__slide"><img src="https://source.unsplash.com/400x300/?shop,4" alt="Shop 4" class="rounded shadow"></li>
+          <li class="splide__slide"><img src="https://source.unsplash.com/400x300/?shop,5" alt="Shop 5" class="rounded shadow"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrepreneur Text -->
+  <section class="text-center py-8">
+    <h3 class="text-xl font-medium mb-4">Built for entrepreneurs.</h3>
+    <button class="mt-4 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Pick a plan that fits</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-12">
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">Legal</a>
+    </div>
+  </footer>
+</body>
+
+</html>
